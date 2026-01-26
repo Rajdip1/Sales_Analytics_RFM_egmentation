@@ -1,0 +1,28 @@
+Project Summary (Untill Now)
+Smart Demand Forecasting is an e-commerce data analysis project focused on analyzing online retail transaction data. Here's what it does:
+
+Key Components:
+Data Cleaning & Vetting (eda_1.ipynb)
+
+Loads and validates online retail transaction data
+Identifies and handles data quality issues: negative prices/quantities, missing customer IDs, incorrect datetime formats
+Removes duplicates, nulls, and non-sale transactions (returns)
+Creates a Revenue column for financial analysis
+Exploratory Data Analysis (eda_1.ipynb & eda_2.ipynb)
+
+Analyzes transaction patterns across different dimensions
+Generates business insights like Top 10 Countries by Revenue
+Explores temporal trends, product performance, and customer patterns
+RFM Analysis (rfm_analysis.ipynb)
+
+Performs Recency, Frequency, Monetary segmentation to classify customers:
+Recency: Days since last purchase
+Frequency: Number of transactions per customer
+Monetary: Total revenue per customer
+Used for customer segmentation and targeting strategies
+
+Data Source:
+The project uses online retail transaction data (~540K+ records) containing invoice details, products, quantities, prices, dates, and customer information.
+
+This is a foundation for predictive analytics and customer relationship management (CRM) initiatives.
+
