@@ -1,28 +1,42 @@
 Project Summary (Status: On-going)
-Smart Demand Forecasting is an e-commerce data analysis project focused on analyzing online retail transaction data. Here's what it does:
+Smart Demand Forecasting is an e-commerce data analysis and forecasting project focused on analyzing online retail transaction data to drive business insights and predictive analytics.
 
 Key Components:
-Data Cleaning & Vetting (eda_1.ipynb)
 
-Loads and validates online retail transaction data
-Identifies and handles data quality issues: negative prices/quantities, missing customer IDs, incorrect datetime formats
-Removes duplicates, nulls, and non-sale transactions (returns)
-Creates a Revenue column for financial analysis
-Exploratory Data Analysis (eda_1.ipynb & eda_2.ipynb)
+1. Data Cleaning & Vetting (full_data_cleaning.ipynb)
+   - Loads and validates online retail transaction data (~52,933 cleaned records from 540K+ original)
+   - Identifies and handles data quality issues: negative prices/quantities, missing customer IDs, incorrect datetime formats
+   - Removes duplicates, nulls, and non-sale transactions (returns)
+   - Creates derived columns: Revenue, Year, Month, DayName, Hour for temporal analysis
+   - Outputs cleaned datasets for downstream analysis
 
-Analyzes transaction patterns across different dimensions
-Generates business insights like Top 10 Countries by Revenue
-Explores temporal trends, product performance, and customer patterns
-RFM Analysis (rfm_analysis.ipynb)
+2. Exploratory Data Analysis (eda_1.ipynb & eda_2.ipynb)
+   - Analyzes transaction patterns across multiple dimensions
+   - Generates business insights: Top countries by revenue, product performance, customer behavior trends
+   - Explores temporal patterns: seasonal trends, day-of-week effects, hourly patterns
+   - Identifies data characteristics: 3,789 unique customers, wide range in transaction frequency (1-163 purchases)
 
-Performs Recency, Frequency, Monetary segmentation to classify customers:
-Recency: Days since last purchase
-Frequency: Number of transactions per customer
-Monetary: Total revenue per customer
-Used for customer segmentation and targeting strategies
+3. RFM Analysis (rfm_analysis.ipynb)
+   - Performs Recency, Frequency, Monetary customer segmentation:
+     * Recency: Days since last purchase (1-374 days)
+     * Frequency: Number of transactions per customer (1-163)
+     * Monetary: Total revenue per customer ($0.39-$77,183.60)
+   - Assigns RFM scores (1-5 scale) using quantile-based binning
+   - Maps scores to customer segments: Champions, Loyal Customers, Big Spenders, At-Risk, Others
+   - Supports targeted marketing and retention strategies
 
-Data Source:
-The project uses online retail transaction data (~540K+ records) containing invoice details, products, quantities, prices, dates, and customer information.
+4. Time Series Demand Forecasting (time_series_demand_forecasting.ipynb & time_series_demand_forecasting2.ipynb)
+   - Builds predictive models for future demand patterns
+   - Leverages cleaned transaction data and temporal insights
+   - Supports inventory planning and demand-driven decision making
 
-This is a foundation for predictive analytics and customer relationship management (CRM) initiatives.
+Data Sources:
+- Online_Retail.csv (original raw data)
+- online_retail_cleaned.csv, online_retail_cleaned_v2.csv, full_online_retail_cleaned.csv (processed versions)
+
+Project Objectives:
+- Provide actionable customer insights through segmentation
+- Forecast future demand patterns for inventory optimization
+- Support CRM initiatives and targeted marketing campaigns
+- Enable data-driven decision making for e-commerce operations
 
