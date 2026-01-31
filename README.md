@@ -123,12 +123,13 @@ Given the intermittent nature of demand, forecasts should be complemented with *
 - Pandas, NumPy
 - Statsmodels
 - Matplotlib
+- Seaborn
 - Jupyter Notebook
 
 ---
 
 ## 📂 Project Structure
-<img width="442" height="530" alt="Project Structure" src="https://github.com/user-attachments/assets/4e496308-e759-40bd-b1b6-1a2c5deeb455" />
+<img width="511" height="643" alt="Screenshot 2026-01-31 215541" src="https://github.com/user-attachments/assets/cc5d14d8-2616-4f7a-8e4c-c8088f3da9b4" />
 
 ---
 
