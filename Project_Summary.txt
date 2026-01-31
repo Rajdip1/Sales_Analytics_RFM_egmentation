@@ -1,4 +1,5 @@
-Project Summary (Status: On-going)
+Project Summary
+
 Smart Demand Forecasting is an e-commerce data analysis and forecasting project focused on analyzing online retail transaction data to drive business insights and predictive analytics.
 
 Key Components:
