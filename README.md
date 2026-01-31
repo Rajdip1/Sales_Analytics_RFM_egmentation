@@ -1,4 +1,4 @@
-# 📦 Smart Demand Forecasting using Time Series Models
+# 📦 Retail_Sales_Analytics_RFM_Forecasting
 
 ## 📌 Project Overview
 This project focuses on forecasting product-level demand using historical retail transaction data.  
